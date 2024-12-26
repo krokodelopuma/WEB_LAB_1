@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>урТим</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+<header class="header">
+    Белик Тимур Алексеевич Р3114 408245
+</header>
+<div id="table-container">
+    <table id="dynamic-table">
+        <thead>
+        <tr>
+            <th>x</th>
+            <th>y</th>
+            <th>r</th>
+            <th>Result</th>
+            <th>Current Time</th>
+            <th>Exec Time</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Строки будут добавлены динамически -->
+        </tbody>
+    </table>
+</div>
+
+<form id="form">
+    <table>
+        <tr>
+            <td>X:</td>
+            <td>
+                <select name="x" id="x">
+                    <option value="-5">-5</option>
+                    <option value="-4">-4</option>
+                    <option value="-3">-3</option>
+                    <option value="-2">-2</option>
+                    <option value="-1">-1</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Y:</td>
+            <td><input type="text" name="y" id="y"></td>
+        </tr>
+        <tr>
+            <td>R:</td>
+            <td>
+                <input type="checkbox" name="r" value="1" onclick="onlyOneCheckbox(this)">1
+                <input type="checkbox" name="r" value="2" onclick="onlyOneCheckbox(this)">2
+                <input type="checkbox" name="r" value="3" onclick="onlyOneCheckbox(this)">3
+                <input type="checkbox" name="r" value="4" onclick="onlyOneCheckbox(this)">4
+                <input type="checkbox" name="r" value="5" onclick="onlyOneCheckbox(this)">5
+            </td>
+        </tr>
+    </table>
+    <!-- <script src="script.js"></script> ounsubmit невыполняеться-->
+    <button type="button" onclick="if (validateForm()) return false;">Проверить</button>
+</form>
+
+
+
+<img src="graf.jpg" alt="GIF" width="400">
+</body>
+</html>

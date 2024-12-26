@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    Белик Тимур Алексеевич Р3114 408245
+</header>
+<form id="form"  method="POST" onsubmit="return validateForm()">
+    <table>
+        <tr>
+            <td>X:</td>
+            <td>
+                <select name="x" id="x">
+                    <option value="-5">-5</option>
+                    <option value="-4">-4</option>
+                    <option value="-3">-3</option>
+                    <option value="-2">-2</option>
+                    <option value="-1">-1</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Y:</td>
+            <td><input type="text" name="y" id="y"></td>
+        </tr>
+        <tr>
+            <td>R:</td>
+            <td>
+                <input type="checkbox" name="r" value="1">1
+                <input type="checkbox" name="r" value="2">2
+                <input type="checkbox" name="r" value="3">3
+                <input type="checkbox" name="r" value="4">4
+                <input type="checkbox" name="r" value="5">5
+            </td>
+        </tr>
+    </table>
+    <!-- <script src="script.js"></script> ounsubmit невыполняеться-->
+    <button type="submit">Проверить</button>
+</form>
+</body>
+</html>
